@@ -1,7 +1,7 @@
 #!/bin/sh
 # shellcheck disable=SC2164
 
-. ./setantenv.sh
+. ./setantenv.bat
 
 cd ./app
 
