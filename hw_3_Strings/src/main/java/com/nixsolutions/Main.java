@@ -14,7 +14,7 @@ public class Main {
 
             System.out.println("1: Enter the string to reverse it");
             System.out.println("2: Enter the string and substring to reverse it.");
-            System.out.println("3: Enter the string, and two indexes which program start and when supposed to end reverse ");
+            System.out.println("3: Enter the string, and two indexes(numbers) which program start and when supposed to end reverse ");
             System.out.println("0 - exit");
 
             BufferedReader reader = new BufferedReader(
@@ -75,6 +75,10 @@ public class Main {
                         System.out.println("Wrong input, try again");
                     }
 
+                }
+
+                case "0" -> {
+                    System.exit(1);
                 }
             }
         }
