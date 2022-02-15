@@ -1,3 +1,9 @@
 #!/bin/sh
 
-java  ./target/-jar hw_3_Strings-1.0-SNAPSHOT.jar
+if [ ! -f ./target/hw_3_Strings.jar ]; then
+    echo "Trying to build project"
+    mvn clean package
+    echo "Project build successfully"
+fi
+
+java -jar ./target/hw_3_Strings.jar
