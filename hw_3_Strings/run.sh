@@ -1,3 +1,3 @@
 #!/bin/sh
 
-java -jar nix_11.jar
+java  ./target/-jar hw_3_Strings-1.0-SNAPSHOT.jar
