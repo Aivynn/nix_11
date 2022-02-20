@@ -17,7 +17,7 @@
     </build>
     <packaging>pom</packaging>
     <modules>
-        <module>hw_2_base_types</module>
+<!--        <module>hw_2_base_types</module>-->
         <module>hw_3_Strings</module>
         <module>customReverse</module>
         <module>hw_3_Strings</module>

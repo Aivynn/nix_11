@@ -3,11 +3,9 @@ package com.nixsolutions;
 public class Strings {
 
     public static String reverse(String string) {
-
         int count = 0;
         int x = string.length() - 1;
-        String reversed_string = new String("");
-
+        String reversed_string = "";
         for (int i = 0; i < string.length(); i++) {
             if (string.charAt(i) == ' ') {
                 count++;
@@ -30,7 +28,6 @@ public class Strings {
                 words[0] = reversed_string;
             }
         }
-
         StringBuilder answer = new StringBuilder();
         for (String s : words) {
             answer.append(s);
@@ -40,10 +37,7 @@ public class Strings {
     }
 
     public static String reverse(String main, String substring) {
-
-
         String reversed = "";
-
         if (!main.contains(substring)) {
             System.out.println("No such substring, try again");
         } else {
@@ -53,44 +47,29 @@ public class Strings {
     }
 
     public static String reverse(String string, int firstInd, int secondInd) {
-
         String substr = "";
         String reversed = "";
-
         for (int i = 0; i < string.length(); i++) {
             if (i >= firstInd && i <= secondInd && string.charAt(i) != ' ') {
                 substr += string.charAt(i);
             }
             if (string.charAt(i) == ' ') {
-
                 reversed = reverseSubstring(substr);
-
                 string = string.replace(substr, reversed);
                 substr = "";
                 reversed = "";
             }
-
         }
         reversed = reverseSubstring(substr);
         string = string.replace(substr, reversed);
         return string;
-
     }
 
     private static String reverseSubstring(String substring) {
-
         String reversed = "";
-
-
         for (int j = substring.length(); j > 0; j--) {
             reversed += substring.charAt(j - 1);
         }
         return reversed;
-
-
     }
 }
-
-
-
-
